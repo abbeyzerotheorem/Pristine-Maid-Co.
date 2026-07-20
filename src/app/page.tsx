@@ -8,6 +8,7 @@ import { BeforeAfterSlider } from "@/components/sections/BeforeAfterSlider";
 import { SatisfactionGuarantee } from "@/components/sections/SatisfactionGuarantee";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
+import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/sections/Footer";
 import { MobileConversionRibbon } from "@/components/sections/MobileConversionRibbon";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <SatisfactionGuarantee />
         <Testimonials />
         <FAQAccordion />
+        <ContactSection />
       </main>
       <Footer />
       <MobileConversionRibbon />

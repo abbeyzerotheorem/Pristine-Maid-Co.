@@ -11,9 +11,9 @@ export const cleaningConfig: CleaningConfig = {
   },
 
   contact: {
-    phone: "(512) 555-0147",
+    phone: "+27 64 166 3906",
     email: "hello@pristinmaidco.com",
-    dispatchAddress: "1200 Research Blvd, Suite 310, Austin, TX 78759",
+    dispatchAddress: "Long Ave, Randburg, 2194, South Africa",
     hours: "Mon–Sat: 7:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM",
   },
 
@@ -259,7 +259,7 @@ export const cleaningConfig: CleaningConfig = {
         { task: "Everything in Standard Clean", included: true },
         { task: "Inside all cabinets and drawers wiped", included: true },
         { task: "Inside oven and range hood degreased", included: true },
-        { task: "Inside冰箱 fully cleaned and shelved", included: true },
+        { task: "Inside fridge fully cleaned and shelved", included: true },
         { task: "Baseboards scrubbed and polished", included: true },
         { task: "Door frames and crown molding dusted", included: true },
         { task: "Light fixtures and ceiling fans wiped", included: true },
@@ -437,21 +437,70 @@ export const cleaningConfig: CleaningConfig = {
       value: "Licensed & Insured",
       label: "TX License #2024-48712",
       icon: "ShieldCheck",
+      tone: "brand",
     },
     {
       value: "$2M Coverage",
       label: "Full Liability & Bonding",
       icon: "BadgeDollarSign",
+      tone: "amber",
     },
     {
       value: "12,400+",
       label: "Homes Cleaned",
       icon: "Home",
+      tone: "green",
     },
     {
       value: "4.97",
       label: "Average Google Rating",
       icon: "Star",
+      tone: "amber",
     },
+  ],
+
+  guaranteeePillars: [
+    {
+      id: "re-clean",
+      icon: "RotateCcw",
+      title: "Free Re-Clean in 24 Hours",
+      description:
+        "If you aren't completely satisfied, we return within 24 hours to re-clean the areas of concern — completely free.",
+    },
+    {
+      id: "full-refund",
+      icon: "BadgeCheck",
+      title: "Full Refund if Still Unhappy",
+      description:
+        "If you're still not satisfied after the re-clean, we refund your payment in full. No questions, no hassle.",
+    },
+    {
+      id: "zero-risk",
+      icon: "Home",
+      title: "Zero-Risk Booking",
+      description:
+        "Every booking is backed by our guarantee. You never pay for a clean that doesn't meet our 200% Spotless standard.",
+    },
+  ],
+
+  teamBadges: [
+    { id: "bg-check", icon: "ShieldCheck", label: "Background-Checked" },
+    { id: "pet-safe", icon: "PawPrint", label: "Pet-Safe Products" },
+    { id: "guarantee", icon: "Award", label: "200% Spotless Guarantee" },
+    { id: "punctual", icon: "Clock", label: "Punctual & Reliable" },
+  ],
+
+  footerLinks: [
+    { label: "Get Instant Quote", href: "#quote-estimator" },
+    { label: "Our Services", href: "#services" },
+    { label: "Meet the Team", href: "#team" },
+    { label: "Reviews", href: "#testimonials" },
+    { label: "Careers — Join Our Team", href: "#" },
+    { label: "Commercial Cleaning", href: "#services" },
+  ],
+
+  socials: [
+    { id: "instagram", icon: "Instagram", label: "Instagram", href: "#" },
+    { id: "facebook", icon: "Facebook", label: "Facebook", href: "#" },
   ],
 };

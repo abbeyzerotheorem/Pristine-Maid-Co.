@@ -14,39 +14,47 @@ export function FAQAccordion() {
   const { faq } = cleaningConfig;
 
   return (
-    <section className="section-padding bg-white">
+    <section id="faq" className="section-padding bg-surface">
       <div className="mx-auto max-w-3xl">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity:0, y:20 }}
+          whileInView={{ opacity:1, y:0 }}
+          viewport={{ once:true }}
+          transition={{ duration:0.5 }}
           className="mb-12 text-center"
         >
-          <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+          <div className="eyebrow eyebrow-center mx-auto mb-4">
             <HelpCircle className="h-4 w-4" />
             Common Questions
           </div>
-          <h2 className="mb-4 text-3xl font-bold text-text sm:text-4xl lg:text-5xl">
+          <h2 className="text-h2 font-bold text-ink text-balance">
             Frequently Asked <span className="gradient-mint-text">Questions</span>
           </h2>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          initial={{ opacity:0, y:20 }}
+          whileInView={{ opacity:1, y:0 }}
+          viewport={{ once:true }}
+          transition={{ duration:0.5, delay:0.1 }}
         >
-          <Accordion type="single" collapsible className="space-y-2">
+          <Accordion type="single" collapsible className="space-y-2.5">
             {faq.map((item, index) => (
               <AccordionItem
                 key={item.id}
                 value={item.id}
-                className="rounded-xl border border-border bg-surface px-5 data-[state=open]:shadow-card"
+                className="overflow-hidden rounded-xl border border-border bg-bg px-5 data-[state=open]:shadow-card"
+                style={{ transitionDelay: `${index * 30}ms` }}
               >
                 <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="pr-4">{item.question}</span>
+                  <span className="flex flex-1 items-center gap-3 pr-4">
+                    <span className="inline-flex flex-shrink-0 rounded-md bg-primary/5 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wide text-primary">
+                      {item.category}
+                    </span>
+                    <span className="text-[0.95rem] font-semibold text-ink">
+                      {item.question}
+                    </span>
+                  </span>
                 </AccordionTrigger>
                 <AccordionContent>{item.answer}</AccordionContent>
               </AccordionItem>

@@ -1,3 +1,33 @@
+// Central, strict type system for the Pristine Maid Co. site.
+// Every icon reference is narrowed to `IconName` so a typo in /data is a
+// compile error, never a silent runtime fallback.
+
+export type IconName =
+  | "ShieldCheck"
+  | "BadgeDollarSign"
+  | "Home"
+  | "Star"
+  | "Layers"
+  | "Leaf"
+  | "Building2"
+  | "Flame"
+  | "Refrigerator"
+  | "Sun"
+  | "TreePine"
+  | "Ruler"
+  | "Package"
+  | "Shirt"
+  | "Warehouse"
+  | "PawPrint"
+  | "Award"
+  | "Clock"
+  | "RotateCcw"
+  | "BadgeCheck"
+  | "Instagram"
+  | "Facebook";
+
+export type Tone = "brand" | "amber" | "green";
+
 export interface BrandMetadata {
   name: string;
   tagline: string;
@@ -19,16 +49,6 @@ export interface ServiceArea {
   neighborhood: string;
 }
 
-export interface BedroomOption {
-  count: number;
-  label: string;
-}
-
-export interface BathroomOption {
-  count: number;
-  label: string;
-}
-
 export type CleanFrequency = "one-time" | "weekly" | "bi-weekly" | "monthly";
 
 export interface FrequencyOption {
@@ -42,7 +62,7 @@ export interface AddOn {
   id: string;
   name: string;
   price: number;
-  icon: string;
+  icon: IconName;
   description: string;
 }
 
@@ -89,7 +109,7 @@ export interface ServiceCategory {
   name: string;
   shortDescription: string;
   fullDescription: string;
-  icon: string;
+  icon: IconName;
   checklist: ServiceChecklistItem[];
   startingPrice: number;
   popular?: boolean;
@@ -115,7 +135,33 @@ export interface FAQItem {
 export interface CredibilityStat {
   value: string;
   label: string;
-  icon: string;
+  icon: IconName;
+  tone: Tone;
+}
+
+export interface GuaranteePillar {
+  id: string;
+  icon: IconName;
+  title: string;
+  description: string;
+}
+
+export interface TeamBadge {
+  id: string;
+  icon: IconName;
+  label: string;
+}
+
+export interface FooterLink {
+  label: string;
+  href: string;
+}
+
+export interface SocialLink {
+  id: string;
+  icon: IconName;
+  label: string;
+  href: string;
 }
 
 export interface CleaningConfig {
@@ -129,4 +175,8 @@ export interface CleaningConfig {
   testimonials: Testimonial[];
   faq: FAQItem[];
   credibilityStats: CredibilityStat[];
+  guaranteeePillars: GuaranteePillar[];
+  teamBadges: TeamBadge[];
+  footerLinks: FooterLink[];
+  socials: SocialLink[];
 }

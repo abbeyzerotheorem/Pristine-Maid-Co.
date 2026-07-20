@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import { cleaningConfig } from "@/data/cleaning";
+import { SiteHeader } from "@/components/sections/SiteHeader";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const display = Fraunces({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-heading",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "900"],
 });
 
 const inter = Inter({
@@ -119,31 +120,19 @@ export default function RootLayout({
       itemListElement: [
         {
           "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Standard Home Cleaning",
-          },
+          itemOffered: { "@type": "Service", name: "Standard Home Cleaning" },
         },
         {
           "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Deep Moving-In/Out Clean",
-          },
+          itemOffered: { "@type": "Service", name: "Deep Moving-In/Out Clean" },
         },
         {
           "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Eco-Friendly Green Clean",
-          },
+          itemOffered: { "@type": "Service", name: "Eco-Friendly Green Clean" },
         },
         {
           "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Office & Commercial Cleaning",
-          },
+          itemOffered: { "@type": "Service", name: "Office & Commercial Cleaning" },
         },
       ],
     },
@@ -151,14 +140,15 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`${display.variable} ${inter.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-[family-name:var(--font-body)] antialiased">
+      <body className="font-[family-name:var(--font-body)] antialiased pb-24 lg:pb-0">
+        <SiteHeader />
         {children}
       </body>
     </html>
