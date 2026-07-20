@@ -59,12 +59,15 @@ export function Testimonials() {
               </div>
 
               <div className="flex items-center gap-3 border-t border-border pt-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 text-sm font-bold text-primary">
-                  {testimonial.name
-                    .split(" ")
-                    .map((w) => w[0])
-                    .slice(0, 2)
-                    .join("")}
+                <div className="h-10 w-10 overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-secondary/20">
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    className="h-full w-full object-cover"
+                    width={40}
+                    height={40}
+                    loading="lazy"
+                  />
                 </div>
                 <div>
                   <div className="text-sm font-bold text-text">

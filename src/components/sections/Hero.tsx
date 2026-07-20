@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Building2, Sparkles, Shield } from "lucide-react";
+import { ArrowRight, Building2, Home, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cleaningConfig } from "@/data/cleaning";
 
@@ -23,15 +23,15 @@ export function Hero() {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
-              <Sparkles className="h-3.5 w-3.5" />
-              Austin&apos;s Most Trusted Cleaning Service
+              <Home className="h-3.5 w-3.5" />
+              Austin's Most Trusted Cleaning Service
             </div>
 
             <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-text sm:text-5xl lg:text-6xl">
               Come Home to{" "}
               <span className="gradient-mint-text">Fresh.</span>
               <br />
-              We&apos;ll Handle the Rest.
+              We'll Handle the Rest.
             </h1>
 
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-muted">
@@ -61,7 +61,7 @@ export function Hero() {
                 <span>$2M Insured</span>
               </div>
               <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-accent" />
+                <Home className="h-4 w-4 text-accent" />
                 <span>4.97 Google Rating</span>
               </div>
             </div>
@@ -76,7 +76,7 @@ export function Hero() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl lg:aspect-square">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10" />
               <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+                src="/hero.jpeg"
                 alt="A beautifully clean, sunlit living room with pristine surfaces and fresh flowers"
                 className="h-full w-full object-cover"
                 width={800}
@@ -94,7 +94,7 @@ export function Hero() {
             >
               <div className="flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10">
-                  <Sparkles className="h-6 w-6 text-secondary" />
+                  <Home className="h-6 w-6 text-secondary" />
                 </div>
                 <div>
                   <div className="text-sm font-bold text-text">12,400+</div>

@@ -81,7 +81,7 @@ export function BeforeAfterSlider() {
             {/* After image (full) */}
             <div className="absolute inset-0">
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80"
+                src="after.jpeg"
                 alt="After cleaning — a beautifully organized, sparkling clean living room"
                 className="h-full w-full object-cover"
                 width={1200}
@@ -99,7 +99,7 @@ export function BeforeAfterSlider() {
               style={{ width: `${sliderPosition}%` }}
             >
               <img
-                src="https://images.unsplash.com/photo-1527515637462-cff94ee89025?w=1200&q=80"
+                src="before.png"
                 alt="Before cleaning — a cluttered living room needing attention"
                 className="h-full w-full object-cover"
                 style={{ width: `${containerRef.current?.offsetWidth || 1200}px`, maxWidth: "none" }}

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Sparkles,
+  Home,
   Layers,
   Leaf,
   Building2,
@@ -15,7 +15,7 @@ import { cleaningConfig } from "@/data/cleaning";
 import { formatCurrency } from "@/lib/utils";
 
 const iconMap: Record<string, React.ReactNode> = {
-  Sparkles: <Sparkles className="h-6 w-6" />,
+  Home: <Home className="h-6 w-6" />,
   Layers: <Layers className="h-6 w-6" />,
   Leaf: <Leaf className="h-6 w-6" />,
   Building2: <Building2 className="h-6 w-6" />,
@@ -81,7 +81,7 @@ export function ServicesGrid() {
                       }`}
                     >
                       {iconMap[service.icon] || (
-                        <Sparkles className="h-6 w-6" />
+                        <Home className="h-6 w-6" />
                       )}
                     </div>
                     <div>

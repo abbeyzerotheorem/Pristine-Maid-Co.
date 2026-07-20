@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shield, RotateCcw, BadgeCheck, Sparkles } from "lucide-react";
+import { Shield, RotateCcw, BadgeCheck, Home } from "lucide-react";
 
 export function SatisfactionGuarantee() {
   return (
@@ -52,7 +52,7 @@ export function SatisfactionGuarantee() {
                   "If you're still not satisfied after the re-clean, we refund your payment in full. No questions, no hassle.",
               },
               {
-                icon: Sparkles,
+                icon: Home,
                 title: "Zero-Risk Booking",
                 description:
                   "Every booking is backed by our guarantee. You never pay for a clean that doesn't meet our 200% Spotless standard.",

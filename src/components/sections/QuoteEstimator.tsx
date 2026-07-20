@@ -10,7 +10,7 @@ import {
   Plus,
   Minus,
   ArrowRight,
-  Sparkles,
+  Home,
   ChevronRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -140,7 +140,7 @@ export function QuoteEstimator() {
               {/* Frequency */}
               <div className="py-6">
                 <label className="mb-3 flex items-center gap-2 text-sm font-semibold text-text">
-                  <Sparkles className="h-4 w-4 text-primary" />
+                  <Home className="h-4 w-4 text-primary" />
                   Cleaning Frequency
                 </label>
                 <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
