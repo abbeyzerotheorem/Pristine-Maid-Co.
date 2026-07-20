@@ -5,9 +5,9 @@ export const cleaningConfig: CleaningConfig = {
     name: "Pristine Maid Co.",
     tagline: "Come Home to Fresh. We'll Handle the Rest.",
     licenseKey: "TX-HMS-2024-48712",
-    insuranceCoverage: "$2,000,000",
-    city: "Austin",
-    state: "Texas",
+    insuranceCoverage: "R2,000,000",
+    city: "Joburg",
+    state: "SA",
   },
 
   contact: {
@@ -378,7 +378,7 @@ export const cleaningConfig: CleaningConfig = {
       id: "faq-001",
       question: "How do I reschedule or cancel a booking?",
       answer:
-        "You can reschedule or cancel up to 24 hours before your appointment at no charge through our online portal or by calling our support line. Cancellations within 24 hours incur a $49 fee to compensate our cleaning team.",
+        "You can reschedule or cancel up to 24 hours before your appointment at no charge through our online portal or by calling our support line. Cancellations within 24 hours incur a R49 fee to compensate our cleaning team.",
       category: "Booking",
     },
     {
@@ -420,7 +420,7 @@ export const cleaningConfig: CleaningConfig = {
       id: "faq-007",
       question: "Are your cleaners background-checked and insured?",
       answer:
-        "Yes — every team member passes an exhaustive multi-step background check, identity verification, and skills assessment. We carry $2,000,000 in liability insurance and are fully bonded. You'll also receive your cleaner's profile and rating before they arrive.",
+        "Yes — every team member passes an exhaustive multi-step background check, identity verification, and skills assessment. We carry R2,000,000 in liability insurance and are fully bonded. You'll also receive your cleaner's profile and rating before they arrive.",
       category: "Trust",
     },
     {
@@ -440,7 +440,7 @@ export const cleaningConfig: CleaningConfig = {
       tone: "brand",
     },
     {
-      value: "$2M Coverage",
+      value: "R2M Coverage",
       label: "Full Liability & Bonding",
       icon: "BadgeDollarSign",
       tone: "amber",

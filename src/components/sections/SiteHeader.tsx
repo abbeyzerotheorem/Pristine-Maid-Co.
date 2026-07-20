@@ -49,7 +49,7 @@ export function SiteHeader() {
         {/* Logo */}
         <a href="#top" className="group flex items-center gap-2.5">
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-mint text-white shadow-sm transition-transform duration-300 group-hover:scale-105">
-            <Leaf className="h-5 w-5" />
+            <Leaf className="h-5 w-5 text-black" />
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-[family-name:var(--font-heading)] text-lg font-bold tracking-tight text-ink">

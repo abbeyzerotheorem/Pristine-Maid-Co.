@@ -102,7 +102,7 @@ export default function RootLayout({
       latitude: 30.3942,
       longitude: -97.7269,
     },
-    priceRange: "$129-$449",
+    priceRange: "R129-R449",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.97",

@@ -78,7 +78,7 @@ export function ContactSection() {
 
           <Button
             size="xl"
-            className="w-full bg-white text-primary hover:bg-white/90 sm:w-auto"
+            className="w-full bg-white text-white hover:bg-white/90 sm:w-auto"
             asChild
           >
             <a href="#quote-estimator">

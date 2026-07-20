@@ -80,7 +80,7 @@ export function Hero() {
             >
               <div className="flex items-center gap-2">
                 <Shield className="h-4 w-4 text-secondary" />
-                <span>$2M Insured</span>
+                <span>R2M Insured</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="h-4 w-4 fill-accent text-accent" />

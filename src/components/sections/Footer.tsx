@@ -121,7 +121,7 @@ export function Footer() {
             Licenced &amp; Insured — {brand.licenseKey}
           </p>
           <p className="flex items-center gap-1 text-xs text-white/40">
-            Made with <Heart className="h-3 w-3 text-accent fill-current" /> in
+            Made with <Heart className="h-3 w-3 text-accent fill-current" /> in 
             {brand.city}, {brand.state}
           </p>
         </div>

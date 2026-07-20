@@ -97,7 +97,7 @@ export function Testimonials() {
                   </div>
 
                   <div className="flex items-center gap-3 border-t border-border pt-4">
-                    <div className="h-10 w-10 overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-secondary/20">
+                    <div className="relative h-10 w-10 overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-secondary/20">
                       <Image
                         src={t.avatar}
                         alt={t.name}
